@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="zh-CN">
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <title>来自 Electron 渲染器的问好！</title>
-</head>
-
-<body>
-    <h1>来自 Electron 渲染器的问好！</h1>
-    <p>👋</p>
-    <p id="info"></p>
-</body>
-<script src="./renderer.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>贪吃蛇游戏</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1a1a2e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

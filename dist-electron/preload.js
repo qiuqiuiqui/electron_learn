@@ -1,0 +1,1 @@
+"use strict";const{contextBridge:r,ipcRenderer:n}=require("electron");r.exposeInMainWorld("electronAPI",{onUpdateCounter:e=>n.on("update-counter",(o,t)=>e(t)),counterValue:e=>n.send("counter-value",e)});
